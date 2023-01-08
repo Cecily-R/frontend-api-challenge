@@ -10,8 +10,5 @@ describe("PeepsModel", () => {
       model.addPeep("I am cold");
 
       expect(model.getPeeps()).toEqual(["I am tired", "I am hungry", "I am cold"]);
-
-
-
     })
   });
