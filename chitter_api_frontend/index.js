@@ -6,4 +6,4 @@ const client = new PeepsClient();
 const model = new PeepsModel();
 const view = new PeepsView(client, model);
 
-view.displayPeeps();
+view.displayPeepsFromApi();

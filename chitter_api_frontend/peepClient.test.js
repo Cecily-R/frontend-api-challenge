@@ -7,13 +7,13 @@ describe("peepsClient", () => {
     const peepsClient = new PeepsClient();
 
     fetch.mockResponseOnce(JSON.stringify({
-      id: 72,
-      handle: "Laura1995"
+      id: 3,
+      body: "my first peep :)"
     }));
 
     peepsClient.loadPeeps((returnedDataFromApi) => {
-      expect(returnedDataFromApi.id).toBe(72)
-      expect(returnedDataFromApi.handle).toBe("Laura1995")
+      expect(returnedDataFromApi.id).toBe(3)
+      expect(returnedDataFromApi.body).toBe("my first peep :)")
     })
 
   })

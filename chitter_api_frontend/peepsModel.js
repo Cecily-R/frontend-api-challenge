@@ -8,8 +8,11 @@ class PeepsModel {
   }
 
   addPeep(newPeep) {
-    this.peeps.push(newPeep);
+    newPeep.forEach(peep => {
+      this.peeps.push(peep);
+    });
   }
+
 };
 
 module.exports = PeepsModel;
